@@ -6,16 +6,18 @@
 /*   By: csilva <csilva@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 13:09:40 by csilva            #+#    #+#             */
-/*   Updated: 2025/11/08 17:07:49 by csilva           ###   ########.fr       */
+/*   Updated: 2025/11/10 17:12:06 by csilva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-#include <stdio.h>
-#include <stdarg.h>
+# include <stdio.h>
+# include <stdarg.h>
 
-
+int	ft_putaddres(unsigned long n, int count);
+int	ft_putnbr_base(unsigned int n, char *base, int count);
+int	ft_printf(const char *format, ...);
 
 #endif
